@@ -1,5 +1,5 @@
 
-class HTMLnode():
+class Htmlnode():
     def __init__(self, 
                  tag = None, 
                  value = None, 
@@ -15,8 +15,8 @@ class HTMLnode():
 
     def props_to_html(self):
         output = ""
-        for key in props:
-            output += f" \"{key}\"=\"{props[key]}\n"
+        for key in self.props:
+            output += f" \"{key}\"=\"{self.props[key]}\n"
         actual_output = output.replace("\n", "")
         return actual_output
 

@@ -11,7 +11,7 @@ class TextType(Enum):
 class TextNode():
     def __init__(self, TEXT, TEXT_TYPE: TextType, URL = None):
         self.text = TEXT
-        self.text_type = TEXT_TYPE.value
+        self.text_type = TEXT_TYPE
         self.url = URL
 
     def getTextType(self):
